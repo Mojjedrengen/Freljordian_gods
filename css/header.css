@@ -5,6 +5,10 @@
     text-decoration: none;
 }
 
+html, body {
+    height: 100%;
+}
+
 /* --------------------------- Header ----------------------*/
 .header{
     width: 100%;
@@ -24,6 +28,11 @@
     height: 100%;
     display: table;
     float: left;
+}
+
+.logo_container img {
+    height: 50px;
+    margin-top: 15px;
 }
 
 .logo_container h1{
@@ -54,4 +63,25 @@
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+}
+
+/*-----------------------Body to make footer work-------------------------*/
+
+#content-container {
+    min-height: 100%;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+/*----------------------Fotter-----------------------*/
+
+#footer {
+    background-color: darkblue;
+    position: relative;
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
 }
