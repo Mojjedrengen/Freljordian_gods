@@ -10,60 +10,80 @@ html, body {
 }
 
 /* --------------------------- Header ----------------------*/
-.header{
-    width: 100%;
-    height: 80px;
-    display: block;
+.navbar {
+    overflow: hidden;
     background-color: lightblue;
 }
 
-.inner_header{
-    width: 1000px;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
-}
-
-.logo_container{
-    height: 100%;
-    display: table;
+.navbar a {
     float: left;
-}
-
-.logo_container img {
-    height: 50px;
-    margin-top: 15px;
-}
-
-.logo_container h1{
-    color: black;
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 32px;
-}
-
-.navigation{
-    float: right;
-    height: 100%;
-}
-
-.navigation a{
-    height: 100%;
-    display: table;
-    float: left;
-    padding: 0px 20px;
-}
-
-.navigation li{
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
+
+/*-----------------------Dropdown Knap---------------------------------*/
+/* Dropdown Button */
+.dropbtn {
+    background-color: lightblue;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropbtn:hover {
+    color: white;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 /*-----------------------Body to make footer work-------------------------*/
 
@@ -73,15 +93,27 @@ html, body {
 
 #main {
     overflow: auto;
-    padding-bottom: 100px;
+    padding-bottom: 75px;
 }
 
-/*----------------------Fotter-----------------------*/
+/*----------------------Footer-----------------------*/
 
-#footer {
-    background-color: darkblue;
-    position: relative;
-    height: 100px;
-    margin-top: -100px;
-    clear: both;
+.footer {
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    color: darkblue;
 }

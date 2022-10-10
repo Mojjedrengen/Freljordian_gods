@@ -1,0 +1,10 @@
+Krav
+    1. Navigations bar
+    2. Footer med kilder
+    3. Dropdown menu
+    4. Login knap og menu
+    5. Artikler om de forskellige freljordian gods
+
+Forslag
+    1. Kort over freljord
+    2. Imbeded champion spotlight af guderne
